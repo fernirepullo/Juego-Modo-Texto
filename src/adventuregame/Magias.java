@@ -15,14 +15,17 @@ public class Magias {
     }
 
     public int getCosteMagia() {
+
         return costeMagia;
     }
 
     public int getCuraMax() {
+
         return curaMax;
     }
 
     public int getMaxDamage() {
+
         return maxDamage;
     }
 
@@ -37,18 +40,22 @@ public class Magias {
     }
 
     public void setCosteMagia(int costeMagia) {
+
         this.costeMagia = costeMagia;
     }
 
     public void setCuraMax(int curaMax) {
+
         this.curaMax = curaMax;
     }
 
     public void setMaxDamage(int maxDamage) {
+
         this.maxDamage = maxDamage;
     }
 
     public void setNombreMagia(String magiaNueva) {
+
         nombreMagia.add(magiaNueva);
 
     }
