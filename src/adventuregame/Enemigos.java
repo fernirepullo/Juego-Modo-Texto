@@ -88,14 +88,20 @@ public class Enemigos {
 
     }
 
-    public void elegirEnemigos(){
+    public void listarEnemigos(int nivel){
 
-        if(nivel < 4){
+        if (nivel < 0){
+
+            System.out.println("Error, el nivel no puede ser menor de 0");
+        }
+
+
+        if (nivel > 0 && nivel < 4){
 
             enemigos = new String[]{"Kobold", "Rata gigante", "Serpiente" ,"Perro salvaje" ,"Guerrero"};
         }
 
-        else if(nivel >= 4 && nivel <= 6){
+        else if (nivel >= 4 && nivel <= 6){
 
             enemigos = new String[]{"Mono", "Oso negro", "Jabalí", "Drow", "Goblin", "Lobo araña gigante", "Orco", "Caballo de guerra",
                     "Enjambre de insectos", "Worg", "Armadura animada", "Oso Pardo", "Dragon Wyrmling", "Lobo alfa", "Ghoul", "Águila Gigange",
@@ -113,14 +119,19 @@ public class Enemigos {
 
     }
 
-    public void elegirJefes(){
+    public void listarJefes(int nivel){
 
-        if(nivel < 4){
+        if (nivel < 0){
+
+            System.out.println("Error, el nivel no puede ser inferior a 0");
+        }
+
+        else if(nivel > 0 && nivel < 4){
 
             jefes = new String[]{"Estatua oscura animada", "Asesino del culto", "Exploradores de la tribu" ,"Orco" ,"Araña gigante" ,"Zombies" ,"Yeti"};
         }
 
-        else if(nivel >= 4 && nivel <= 6){
+        else if (nivel >= 4 && nivel <= 6){
 
             jefes = new String[]{"Elemental de Aire", "Esqueleto del dragón blanco", "Momia", "Manticora", "Bruja de hielo",
                     "Gigante de la colina", "Golem de carne", "Guerrero Hobgoblin", "Galeb Duhr"};

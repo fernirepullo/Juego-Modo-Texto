@@ -31,11 +31,6 @@ public class Magias {
 
     public ArrayList<String> getNombreMagia() {
 
-        nombreMagia.add("Pyro");
-        nombreMagia.add("Cryo");
-        nombreMagia.add("Electro");
-        nombreMagia.add("Heal");
-
         return nombreMagia;
     }
 
@@ -60,7 +55,13 @@ public class Magias {
 
     }
 
+    public void iniciarMagias(){
 
+        nombreMagia.add("Pyro");
+        nombreMagia.add("Cryo");
+        nombreMagia.add("Electro");
+        nombreMagia.add("Heal");
+    }
 
     @Override
     public String toString() {

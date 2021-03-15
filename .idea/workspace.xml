@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c2850f-2a91-40ba-843c-eeb251a5237a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/adventuregame/OperacionesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adventuregame/Operaciones.java" afterDir="false" />
+    <list default="true" id="73c2850f-2a91-40ba-843c-eeb251a5237a" name="Default Changelist" comment="14-3-21 -&gt; Estructura del jugador y los enemigos más avanzada">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adventuregame/Enemigos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Enemigos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adventuregame/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Jugador.java" afterDir="false" />
@@ -82,8 +80,19 @@
       <workItem from="1615650871929" duration="122000" />
       <workItem from="1615674206742" duration="4374000" />
       <workItem from="1615679731469" duration="250000" />
-      <workItem from="1615724015937" duration="7571000" />
+      <workItem from="1615724015937" duration="7773000" />
+      <workItem from="1615810147433" duration="169000" />
+      <workItem from="1615843590837" duration="1012000" />
+      <workItem from="1615851118782" duration="303000" />
     </task>
+    <task id="LOCAL-00001" summary="14-3-21 -&gt; Estructura del jugador y los enemigos más avanzada">
+      <created>1615734962212</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615734962212</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +109,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="14-3-21 -&gt; Estructura del jugador y los enemigos más avanzada" />
+    <option name="LAST_COMMIT_MESSAGE" value="14-3-21 -&gt; Estructura del jugador y los enemigos más avanzada" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1615679854784">
@@ -123,11 +136,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="515" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1615679812101" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1615734763077">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1615734985847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1615679049249" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1615734763077" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1615734985847" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615679074557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
