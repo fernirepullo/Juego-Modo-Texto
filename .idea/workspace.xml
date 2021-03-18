@@ -16,11 +16,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c2850f-2a91-40ba-843c-eeb251a5237a" name="Default Changelist" comment="16-3-21 -&gt; Se añaden los archivo CSV donde se encuentran los enemigos/jefes">
+    <list default="true" id="73c2850f-2a91-40ba-843c-eeb251a5237a" name="Default Changelist" comment="18-3-21 -&gt; Lista de objetos añadida.&#10;        -&gt; Métodos de obtención de vida aleatoria&#10;        -&gt; Método de obtención de objetos y rarezas por empezar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adventuregame/Enemigos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Enemigos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adventuregame/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Jugador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adventuregame/Magias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Magias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adventuregame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adventuregame/Objetos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Objetos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adventuregame/Operaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Operaciones.java" afterDir="false" />
     </list>
@@ -114,7 +114,8 @@
       <workItem from="1615998267902" duration="427000" />
       <workItem from="1616002019818" duration="504000" />
       <workItem from="1616060105099" duration="14000" />
-      <workItem from="1616070391733" duration="2296000" />
+      <workItem from="1616070391733" duration="2527000" />
+      <workItem from="1616080291469" duration="3404000" />
     </task>
     <task id="LOCAL-00001" summary="16-3-21 -&gt; Se añaden los archivo CSV donde se encuentran los enemigos/jefes">
       <created>1615854381644</created>
@@ -123,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615854381644</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="18-3-21 -&gt; Lista de objetos añadida.&#10;        -&gt; Métodos de obtención de vida aleatoria&#10;        -&gt; Método de obtención de objetos y rarezas por empezar">
+      <created>1616072805169</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616072805169</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +142,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -143,17 +163,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="16-3-21 -&gt; Se añaden los archivo CSV donde se encuentran los enemigos/jefes" />
-    <option name="LAST_COMMIT_MESSAGE" value="16-3-21 -&gt; Se añaden los archivo CSV donde se encuentran los enemigos/jefes" />
+    <MESSAGE value="18-3-21 -&gt; Lista de objetos añadida.&#10;        -&gt; Métodos de obtención de vida aleatoria&#10;        -&gt; Método de obtención de objetos y rarezas por empezar" />
+    <option name="LAST_COMMIT_MESSAGE" value="18-3-21 -&gt; Lista de objetos añadida.&#10;        -&gt; Métodos de obtención de vida aleatoria&#10;        -&gt; Método de obtención de objetos y rarezas por empezar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1615679854784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1615679854784" />
-    <state x="537" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1616072328954">
+    <state x="537" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1616083527103">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="537" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1616072328954" />
+    <state x="537" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1616083527103" />
     <state x="377" y="0" key="CommitChangelistDialog2" timestamp="1615679954739">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -162,30 +183,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="473" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615679824594" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1616071567054">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1616072922262">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616071567054" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1616071567054">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616072922262" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1616072922262">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616071567054" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1616071567054">
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616072922262" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1616072922262">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616071567054" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1616071567054">
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616072922262" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1616072922262">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616071567054" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616072922262" />
     <state x="515" y="115" key="RollbackChangesDialog" timestamp="1615679812101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="515" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1615679812101" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615854417183">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616072840020">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1615854417183" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616072840020" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615679074557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

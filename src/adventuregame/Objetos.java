@@ -25,6 +25,8 @@ public class Objetos {
 
     }
 
+    //GETTERS
+
     public String[] getItemsGue() {
         return itemsGue;
     }
@@ -41,6 +43,8 @@ public class Objetos {
         return rareza;
     }
 
+
+    // MÉTODO TOSTRING()
     @Override
     public String toString() {
         return "Objetos{" +

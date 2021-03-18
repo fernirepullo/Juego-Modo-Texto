@@ -1,11 +1,13 @@
 package adventuregame;
 
 import java.util.Scanner;
+
 public class Jugador {
 
     //Declaración del jugador
 
     String nombre;
+    String tipoPersonaje;
 
     //Variables del personaje
 
@@ -24,47 +26,23 @@ public class Jugador {
 
     }
 
+    // CONSTRUCTOR CON PARÁMETROS DE NOMBRE Y CLASE DEL PERSONAJE
+
     public Jugador(String nombre, String tipoPersonaje){
 
-        this.nombre = nombre;
+        this.nombre = nombre.toUpperCase();
 
-        if (tipoPersonaje.equals("GUERRERO")){
 
-            setManaMax(50);
-            setManaActual(50);
-            setExpMax(100);
-            setExperiencia(0);
-            setVidaMax(150);
-            setVidaActual(150);
-            setMaxDamage(45);
-            setNivel(1);
-        }
+        while (!tipoPersonaje.equals("GUERRERO") || !tipoPersonaje.equals("MAGO") || !tipoPersonaje.equals("PALADIN")){
 
-        else if(tipoPersonaje.equals("MAGO")){
-
-            setManaMax(150);
-            setManaActual(150);
-            setExpMax(100);
-            setExperiencia(0);
-            setVidaMax(80);
-            setVidaActual(80);
-            setMaxDamage(20);
-            setNivel(1);
+            System.out.println("Las clases solo pueden ser: GUERRERO, MAGO, PALADIN");
 
         }
 
-        else {
+        this.tipoPersonaje = tipoPersonaje.toUpperCase();
 
-            setManaMax(80);
-            setManaActual(80);
-            setExpMax(100);
-            setExperiencia(0);
-            setVidaMax(120);
-            setVidaActual(120);
-            setMaxDamage(33);
-            setNivel(1);
+        setTipoPersonaje(tipoPersonaje);
 
-        }
     }
 
     //Getters y Setters
@@ -118,6 +96,56 @@ public class Jugador {
         this.maxDamage = maxDamage;
     }
 
+    public String getTipoPersonaje() {
+        return tipoPersonaje;
+    }
+
+    // EN ESTE SETTER SE INICIALIZAN LOS VALORES DEL PERSONAJE SEGÚN SU CLASE
+    public void setTipoPersonaje(String tipoPersonaje) {
+
+
+        if (tipoPersonaje.equals("GUERRERO")){
+
+
+            setManaMax(50);
+            setManaActual(50);
+            setExpMax(100);
+            setExperiencia(0);
+            setVidaMax(150);
+            setVidaActual(150);
+            setMaxDamage(45);
+            setNivel(1);
+        }
+
+        else if(tipoPersonaje.equals("MAGO")){
+
+            setTipoPersonaje(tipoPersonaje);
+            setManaMax(150);
+            setManaActual(150);
+            setExpMax(100);
+            setExperiencia(0);
+            setVidaMax(80);
+            setVidaActual(80);
+            setMaxDamage(20);
+            setNivel(1);
+
+        }
+
+        else if (tipoPersonaje.equals("PALADIN")) {
+
+            setTipoPersonaje(tipoPersonaje);
+            setManaMax(80);
+            setManaActual(80);
+            setExpMax(100);
+            setExperiencia(0);
+            setVidaMax(120);
+            setVidaActual(120);
+            setMaxDamage(33);
+            setNivel(1);
+
+        }
+    }
+
     public void setExperiencia(int experiencia) {
 
         this.experiencia = experiencia;
@@ -157,38 +185,108 @@ public class Jugador {
         this.nivel = nivel;
     }
 
+
+    //SUBIDA DE NIVEL, AUMENTAN LOS VALORES DE MANERA DIFERENTE PARA CADA CLASE
+
     public void subirNivel(){
 
         if(experiencia == expMax){
 
             this.nivel++;
             this.experiencia = 0;
-            this.expMax = this.expMax + 150;
+            this.expMax = this.expMax + 200;
+
+            if (getTipoPersonaje().equals("GUERRERO")){
+
+                setVidaMax(getVidaMax() + 30);
+                setNivel(getNivel() + 1);
+                setVidaActual(getVidaMax());
+                setMaxDamage(getMaxDamage() + 8);
+                setManaMax(getManaMax() + 10);
+                setManaActual(getManaMax());
+
+            }
+
+            else if (getTipoPersonaje().equals("MAGO")){
+
+                setVidaMax(getVidaMax() + 20);
+                setNivel(getNivel() + 1);
+                setVidaActual(getVidaMax());
+                setMaxDamage(getMaxDamage() + 4);
+                setManaMax(getManaMax() + 25);
+                setManaActual(getManaMax());
+
+
+            }
+
+            else {
+
+                setVidaMax(getVidaMax() + 25);
+                setNivel(getNivel() + 1);
+                setVidaActual(getVidaMax());
+                setMaxDamage(getMaxDamage() + 6);
+                setManaMax(getManaMax() + 18);
+                setManaActual(getManaMax());
+
+            }
         }
 
-        else if(experiencia > expMax){
+        else if (experiencia > expMax){
 
             this.nivel++;
             this.experiencia = this.expMax - this.experiencia;
             this.expMax = this.expMax + 150;
 
+            if (getTipoPersonaje().equals("GUERRERO")){
+
+                setVidaMax(getVidaMax() + 30);
+                setNivel(getNivel() + 1);
+                setVidaActual(getVidaMax());
+                setMaxDamage(getMaxDamage() + 8);
+                setManaMax(getManaMax() + 10);
+                setManaActual(getManaMax());
+            }
+
+            else if (getTipoPersonaje().equals("MAGO")){
+
+                setVidaMax(getVidaMax() + 20);
+                setNivel(getNivel() + 1);
+                setVidaActual(getVidaMax());
+                setMaxDamage(getMaxDamage() + 4);
+                setManaMax(getManaMax() + 25);
+                setManaActual(getManaMax());
+
+            }
+
+            else {
+
+                setVidaMax(getVidaMax() + 25);
+                setNivel(getNivel() + 1);
+                setVidaActual(getVidaMax());
+                setMaxDamage(getMaxDamage() + 6);
+                setManaMax(getManaMax() + 18);
+                setManaActual(getManaMax());
+            }
+
         }
 
     }
 
+
+    //MÉTODO TO STRING()
     @Override
     public String toString() {
-
-        return "Jugador{" +
-                "nombre='" + nombre + '\'' +
-                ", vidaMax=" + vidaMax +
-                ", vidaActual=" + vidaActual +
-                ", manaMax=" + manaMax +
-                ", manaActual=" + manaActual +
-                ", maxDamage=" + maxDamage +
-                ", expMax=" + expMax +
-                ", experiencia=" + experiencia +
-                ", nivel=" + nivel +
-                '}';
+        return "\t #### Jugador ####" +
+                "## Nombre del jugador: " + nombre + "## \n" +
+                "## Clase del personaje: " + tipoPersonaje + "\n" +
+                "## Vida máxima inicial: " + vidaMax +
+                "## Vida actual: " + vidaActual +
+                "## Maná máximo inicial: " + manaMax +
+                "## Maná actual: " + manaActual +
+                "## Daño base: " + maxDamage +
+                "## Experiencia actual: " + experiencia +
+                "## Experiencia máxima: " + expMax +
+                "## Nivel del personaje: " + nivel +
+                "########";
     }
 }

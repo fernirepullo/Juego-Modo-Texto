@@ -7,24 +7,24 @@ import java.util.Scanner;
 
 public class Enemigos {
 
-    //Variables de los enemigos
+    //VARIABLES DE LOS ENEMIGOS
     private String nombreEnemigo;
     private String[] enemigos;
     private String[] jefes;
 
-    //Estadísticas de los enemigos
+    //ESTADÍSTICAS DE LOS ENEMIGOS
     private int vidaMax;
     private int vidaMin;
     private int vida;
     private int manaMax;
     private int damageMax;
 
-    //Recompensas
+    //RECOMPENSAS
     private int nivel;
     private int experiencia;
     private int expMax;
 
-
+    // SETTERS Y GETTERS
     public String getNombreEnemigo() {
 
         return nombreEnemigo;
@@ -96,11 +96,13 @@ public class Enemigos {
         this.nombreEnemigo = nombreEnemigo;
     }
 
+    // CONSTRUCTOR POR DEFECTO
     public Enemigos(){
 
     }
 
-    public void getEnemigos(int nivel){
+    // EN ESTE MÉTODO SE OBTIENEN LOS ENEMIGOS SEGÚN SU NIVEL
+    public String[] getEnemigos(int nivel){
 
         if (nivel < 0){
 
@@ -129,9 +131,12 @@ public class Enemigos {
                     "Troll"};
         }
 
+        return enemigos;
     }
 
-    public void listarJefes(int nivel){
+
+    //SE DEVUELVEN LOS JEFES SEGÚN SU NIVEL
+    public String[] listarJefes(int nivel){
 
         if (nivel < 0){
 
@@ -155,9 +160,11 @@ public class Enemigos {
                     "Gigante de fuego", "Nycaloth", "Yeti abominable", "Demonio de la muerte", "Aboleth"};
         }
 
+        return jefes;
     }
 
 
+    //MÉTODO TOSTRING()
     @Override
     public String toString() {
         return "Enemigos{" +

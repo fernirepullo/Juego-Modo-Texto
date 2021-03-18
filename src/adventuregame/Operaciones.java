@@ -8,12 +8,14 @@ import java.util.stream.IntStream;
 
 public class Operaciones {
 
+    // VARIABLES DE LOS ENEMIGOS
     Enemigos enemies;
     Jugador player;
     Objetos item;
     Magias magic;
     Random random;
 
+    // CONSTRUCTOR POR DEFECTO, INICIANDO LAS VARIABLES.
     public Operaciones(){
 
         enemies = new Enemigos();
@@ -23,7 +25,7 @@ public class Operaciones {
 
     }
 
-    // Método para devolver un valor aleatorio para la vida entre un rango de vidas disponibles
+    // MÉTODO PARA DEVOLVER UNA VIDA ALEATORIA ENTRE DOS RANGOS
 
     public int getVidaAleatoria(int minimoVida, int maximoVida){
 
@@ -35,7 +37,12 @@ public class Operaciones {
         return vidaEnemigo;
     }
 
+    // MÉTODO PARA DEVOLVER LA LISTA DE OBJETOS DISPONIBLES SEGÚN LA CLASE
+
     public String getObjeto(String tipoPersonaje){
+
+        item = new Objetos();
+        String[] itemsDisponibles;
 
         Scanner in = new Scanner(System.in);
         tipoPersonaje = tipoPersonaje.toUpperCase();
@@ -50,18 +57,26 @@ public class Operaciones {
 
         if (tipoPersonaje.equals("GUERRERO")){
 
+            itemsDisponibles = item.getItemsGue();
+
         }
 
         else if (tipoPersonaje.equals("MAGO")){
+
+            itemsDisponibles = item.getItemsMag();
 
         }
 
         else if (tipoPersonaje.equals("PALADIN")){
 
+            itemsDisponibles = item.getItemsPal();
+
         }
 
         return "";
     }
+
+    // MÉTODO PARA DEVOLVER LAS RAREZAS.
 
     public String getRareza(){
 

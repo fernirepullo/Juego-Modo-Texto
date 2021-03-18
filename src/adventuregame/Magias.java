@@ -5,15 +5,20 @@ import java.util.Arrays;
 
 public class Magias {
 
+    // VARIABLES DE LA MAGIA
     ArrayList<String> nombreMagia;
     int costeMagia;
     int curaMax;
     int maxDamage;
 
+
+    //CONSTRUCTOR POR DEFECTO
     public Magias(){
 
     }
 
+
+    //SETTERS Y GETTERS
     public int getCosteMagia() {
 
         return costeMagia;
@@ -55,6 +60,8 @@ public class Magias {
         this.maxDamage = maxDamage;
     }
 
+    //MAGIAS INICIALES
+
     public void iniciarMagias(){
 
         nombreMagia.add("PYRO");
@@ -62,6 +69,8 @@ public class Magias {
         nombreMagia.add("ELECTRO");
         nombreMagia.add("HEAL");
     }
+
+    // CARACTERÍSTICAS DE LAS MAGIAS SEGÚN SU NOMBRE
 
     public void valoresMagias(String nombreMagia){
 
@@ -97,6 +106,7 @@ public class Magias {
         }
     }
 
+    // MÉTODO TOSTRING()
     @Override
     public String toString() {
         return "Magias{" +
