@@ -7,14 +7,22 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c2850f-2a91-40ba-843c-eeb251a5237a" name="Default Changelist" comment="14-3-21 -&gt; Estructura del jugador y los enemigos más avanzada">
+    <list default="true" id="73c2850f-2a91-40ba-843c-eeb251a5237a" name="Default Changelist" comment="16-3-21 -&gt; Se añaden los archivo CSV donde se encuentran los enemigos/jefes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adventuregame/Enemigos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Enemigos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adventuregame/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Jugador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adventuregame/Magias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Magias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adventuregame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adventuregame/Objetos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Objetos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adventuregame/Operaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Operaciones.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +73,26 @@
       <recent name="" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventuregame.Main" />
+      <module name="AdventureGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="adventuregame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -80,17 +108,20 @@
       <workItem from="1615650871929" duration="122000" />
       <workItem from="1615674206742" duration="4374000" />
       <workItem from="1615679731469" duration="250000" />
-      <workItem from="1615724015937" duration="7773000" />
-      <workItem from="1615810147433" duration="169000" />
-      <workItem from="1615843590837" duration="1012000" />
-      <workItem from="1615851118782" duration="303000" />
+      <workItem from="1615912200544" duration="2573000" />
+      <workItem from="1615915898096" duration="143000" />
+      <workItem from="1615994718097" duration="1591000" />
+      <workItem from="1615998267902" duration="427000" />
+      <workItem from="1616002019818" duration="504000" />
+      <workItem from="1616060105099" duration="14000" />
+      <workItem from="1616070391733" duration="2296000" />
     </task>
-    <task id="LOCAL-00001" summary="14-3-21 -&gt; Estructura del jugador y los enemigos más avanzada">
-      <created>1615734962212</created>
+    <task id="LOCAL-00001" summary="16-3-21 -&gt; Se añaden los archivo CSV donde se encuentran los enemigos/jefes">
+      <created>1615854381644</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1615734962212</updated>
+      <updated>1615854381644</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -111,19 +142,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="14-3-21 -&gt; Estructura del jugador y los enemigos más avanzada" />
-    <option name="LAST_COMMIT_MESSAGE" value="14-3-21 -&gt; Estructura del jugador y los enemigos más avanzada" />
+    <MESSAGE value="16-3-21 -&gt; Se añaden los archivo CSV donde se encuentran los enemigos/jefes" />
+    <option name="LAST_COMMIT_MESSAGE" value="16-3-21 -&gt; Se añaden los archivo CSV donde se encuentran los enemigos/jefes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1615679854784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1615679854784" />
-    <state x="671" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1615734078747">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="537" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1616072328954">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="537" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1615678531235" />
-    <state x="671" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1615734078747" />
+    <state x="537" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1616072328954" />
     <state x="377" y="0" key="CommitChangelistDialog2" timestamp="1615679954739">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -132,39 +162,45 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="473" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615679824594" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1616071567054">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616071567054" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1616071567054">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616071567054" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1616071567054">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616071567054" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1616071567054">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616071567054" />
     <state x="515" y="115" key="RollbackChangesDialog" timestamp="1615679812101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="515" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1615679812101" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1615734985847">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615854417183">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1615679049249" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1615734985847" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1615854417183" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615679074557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1615679074557" />
-    <state x="675" y="285" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1615732219010">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="540" y="226" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1615650979815">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="226" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1615650979815" />
-    <state x="675" y="285" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1615732219010" />
-    <state x="742" y="308" key="git4idea.merge.GitMergeDialog" timestamp="1615734842054">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="742" y="308" key="git4idea.merge.GitMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1615734842054" />
     <state x="579" y="274" key="git4idea.rebase.GitRebaseDialog" timestamp="1615679840290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="579" y="274" key="git4idea.rebase.GitRebaseDialog/0.0.1536.824@0.0.1536.824" timestamp="1615679840290" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1615727079939">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1615727079939" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1615676965021">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1615998533486">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1615676965021" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1615998533486" />
   </component>
 </project>

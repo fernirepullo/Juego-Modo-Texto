@@ -14,6 +14,8 @@ public class Enemigos {
 
     //Estadísticas de los enemigos
     private int vidaMax;
+    private int vidaMin;
+    private int vida;
     private int manaMax;
     private int damageMax;
 
@@ -42,9 +44,8 @@ public class Enemigos {
         return manaMax;
     }
 
-    public int getVidaMax() {
-
-        return vidaMax;
+    public int getVida() {
+        return vida;
     }
 
     public int getExpMax() {
@@ -59,9 +60,20 @@ public class Enemigos {
         return jefes;
     }
 
-    public void setVidaMax(int vidaMax) {
+    public int getNivel() {
+        return nivel;
+    }
 
-        this.vidaMax = vidaMax;
+    public void setExpMax(int expMax) {
+        this.expMax = expMax;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public void setVida(int vida) {
+        this.vida = vida;
     }
 
     public void setManaMax(int manaMax) {
@@ -88,7 +100,7 @@ public class Enemigos {
 
     }
 
-    public void listarEnemigos(int nivel){
+    public void getEnemigos(int nivel){
 
         if (nivel < 0){
 
@@ -104,7 +116,7 @@ public class Enemigos {
         else if (nivel >= 4 && nivel <= 6){
 
             enemigos = new String[]{"Mono", "Oso negro", "Jabalí", "Drow", "Goblin", "Lobo araña gigante", "Orco", "Caballo de guerra",
-                    "Enjambre de insectos", "Worg", "Armadura animada", "Oso Pardo", "Dragon Wyrmling", "Lobo alfa", "Ghoul", "Águila Gigange",
+                    "Enjambre de insectos", "Worg", "Armadura animada", "Oso Pardo", "Dragon Wyrmling", "Lobo alfa", "Ghoul", "Águila Gigante",
                     "Arpía", "Diablillo", "Yuan-Ti Purasangre"};
         }
 

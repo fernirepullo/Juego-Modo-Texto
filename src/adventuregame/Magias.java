@@ -44,23 +44,57 @@ public class Magias {
         this.curaMax = curaMax;
     }
 
-    public void setMaxDamage(int maxDamage) {
-
-        this.maxDamage = maxDamage;
-    }
-
     public void setNombreMagia(String magiaNueva) {
 
         nombreMagia.add(magiaNueva);
 
     }
 
+    public void setMaxDamage(int maxDamage){
+
+        this.maxDamage = maxDamage;
+    }
+
     public void iniciarMagias(){
 
-        nombreMagia.add("Pyro");
-        nombreMagia.add("Cryo");
-        nombreMagia.add("Electro");
-        nombreMagia.add("Heal");
+        nombreMagia.add("PYRO");
+        nombreMagia.add("CRYO");
+        nombreMagia.add("ELECTRO");
+        nombreMagia.add("HEAL");
+    }
+
+    public void valoresMagias(String nombreMagia){
+
+        nombreMagia = nombreMagia.toUpperCase();
+
+        if (nombreMagia.equals("PYRO")){
+
+            setCosteMagia(50);
+            setMaxDamage(35);
+        }
+
+        else if(nombreMagia.equals("CRYO")){
+
+            setCosteMagia(30);
+            setMaxDamage(26);
+        }
+
+        else if(nombreMagia.equals("ELECTRO")){
+
+            setCosteMagia(40);
+            setMaxDamage(32);
+        }
+
+        else if(nombreMagia.equals("HEAL")){
+
+            setCosteMagia(25);
+            setCuraMax(35);
+        }
+
+        else{
+
+            System.out.println("La magia no se encuentra disponible.");
+        }
     }
 
     @Override
