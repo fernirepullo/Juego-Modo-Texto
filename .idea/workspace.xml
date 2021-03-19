@@ -16,13 +16,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c2850f-2a91-40ba-843c-eeb251a5237a" name="Default Changelist" comment="18-3-21.V2 -&gt; CLASES JUGADOR, ENEMIGOS, OBJETOS Y OPERACIONES MODIFICADA.">
-      <change afterPath="$PROJECT_DIR$/src/adventuregame/Texto.java" afterDir="false" />
+    <list default="true" id="73c2850f-2a91-40ba-843c-eeb251a5237a" name="Default Changelist" comment="19-3-21 -&gt; AÑADIDA LA CLASE TEXTO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adventuregame/Enemigos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Enemigos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adventuregame/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adventuregame/Magias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Magias.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adventuregame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adventuregame/Objetos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Objetos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adventuregame/Operaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Operaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adventuregame/Texto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adventuregame/Texto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +62,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -117,7 +119,9 @@
       <workItem from="1616070391733" duration="2527000" />
       <workItem from="1616080291469" duration="3486000" />
       <workItem from="1616092026246" duration="1669000" />
-      <workItem from="1616156586327" duration="979000" />
+      <workItem from="1616156586327" duration="1043000" />
+      <workItem from="1616157753768" duration="261000" />
+      <workItem from="1616176677873" duration="4566000" />
     </task>
     <task id="LOCAL-00001" summary="16-3-21 -&gt; Se añaden los archivo CSV donde se encuentran los enemigos/jefes">
       <created>1615854381644</created>
@@ -140,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616085092878</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="19-3-21 -&gt; AÑADIDA LA CLASE TEXTO">
+      <created>1616157615651</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616157615651</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +185,8 @@
     <MESSAGE value="16-3-21 -&gt; Se añaden los archivo CSV donde se encuentran los enemigos/jefes" />
     <MESSAGE value="18-3-21 -&gt; Lista de objetos añadida.&#10;        -&gt; Métodos de obtención de vida aleatoria&#10;        -&gt; Método de obtención de objetos y rarezas por empezar" />
     <MESSAGE value="18-3-21.V2 -&gt; CLASES JUGADOR, ENEMIGOS, OBJETOS Y OPERACIONES MODIFICADA." />
-    <option name="LAST_COMMIT_MESSAGE" value="18-3-21.V2 -&gt; CLASES JUGADOR, ENEMIGOS, OBJETOS Y OPERACIONES MODIFICADA." />
+    <MESSAGE value="19-3-21 -&gt; AÑADIDA LA CLASE TEXTO" />
+    <option name="LAST_COMMIT_MESSAGE" value="19-3-21 -&gt; AÑADIDA LA CLASE TEXTO" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1615679854784">
@@ -193,30 +205,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="473" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615679824594" />
-    <state width="1493" height="291" key="GridCell.Tab.0.bottom" timestamp="1616157533052">
+    <state width="1493" height="196" key="GridCell.Tab.0.bottom" timestamp="1616157637918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="291" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616157533052" />
-    <state width="1493" height="291" key="GridCell.Tab.0.center" timestamp="1616157533052">
+    <state width="1493" height="196" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616157637918" />
+    <state width="1493" height="196" key="GridCell.Tab.0.center" timestamp="1616157637918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="291" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616157533052" />
-    <state width="1493" height="291" key="GridCell.Tab.0.left" timestamp="1616157533051">
+    <state width="1493" height="196" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616157637918" />
+    <state width="1493" height="196" key="GridCell.Tab.0.left" timestamp="1616157637918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="291" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616157533051" />
-    <state width="1493" height="291" key="GridCell.Tab.0.right" timestamp="1616157533052">
+    <state width="1493" height="196" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616157637918" />
+    <state width="1493" height="196" key="GridCell.Tab.0.right" timestamp="1616157637918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="291" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616157533052" />
+    <state width="1493" height="196" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616157637918" />
     <state x="515" y="115" key="RollbackChangesDialog" timestamp="1615679812101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="515" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1615679812101" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616085105385">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1616157979737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616085105385" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616157979737" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616157628310">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616157628310" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1616158017152">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1616158017152" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615679074557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

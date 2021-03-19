@@ -102,11 +102,12 @@ public class Magias {
 
         else{
 
-            System.out.println("La magia no se encuentra disponible.");
+            System.out.println("Aún no has desbloqueado esta magia.");
         }
     }
 
     // MÉTODO TOSTRING()
+
     @Override
     public String toString() {
         return "Magias{" +

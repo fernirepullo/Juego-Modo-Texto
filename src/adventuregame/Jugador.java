@@ -19,6 +19,8 @@ public class Jugador {
     int experiencia;
     int expMax;
     int nivel;
+    int numPociones;
+    int curaPocion = 30;
 
     //Constructor
 
@@ -91,6 +93,22 @@ public class Jugador {
         return nivel;
     }
 
+    public int getNumPociones() {
+        return numPociones;
+    }
+
+    public int getCuraPocion() {
+        return curaPocion;
+    }
+
+    public void setCuraPocion(int curaPocion) {
+        this.curaPocion = curaPocion;
+    }
+
+    public void setNumPociones(int numPociones) {
+        this.numPociones = numPociones;
+    }
+
     public void setMaxDamage(int maxDamage) {
 
         this.maxDamage = maxDamage;
@@ -101,6 +119,7 @@ public class Jugador {
     }
 
     // EN ESTE SETTER SE INICIALIZAN LOS VALORES DEL PERSONAJE SEGÚN SU CLASE
+
     public void setTipoPersonaje(String tipoPersonaje) {
 
 
@@ -115,6 +134,7 @@ public class Jugador {
             setVidaActual(150);
             setMaxDamage(45);
             setNivel(1);
+            setNumPociones(2);
         }
 
         else if(tipoPersonaje.equals("MAGO")){
@@ -128,6 +148,7 @@ public class Jugador {
             setVidaActual(80);
             setMaxDamage(20);
             setNivel(1);
+            setNumPociones(1);
 
         }
 
@@ -142,8 +163,9 @@ public class Jugador {
             setVidaActual(120);
             setMaxDamage(33);
             setNivel(1);
-
+            setNumPociones(3);
         }
+
     }
 
     public void setExperiencia(int experiencia) {

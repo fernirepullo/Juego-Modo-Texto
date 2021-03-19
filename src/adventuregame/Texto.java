@@ -1,6 +1,12 @@
 package adventuregame;
 
+import java.util.Scanner;
+
 public class Texto {
+
+    Scanner in = new Scanner(System.in);
+    Jugador player = new Jugador();
+    Enemigos enemy = new Enemigos();
 
     public Texto(){
 
@@ -28,4 +34,41 @@ public class Texto {
                 "# ¿Listo para una aventura digna de un héroe? \n" +
                 "\t#############################################");
     }
+
+    public void empezar(){
+
+        System.out.println("Introduzca su nombre");
+        String nombre = in.nextLine();
+
+        nombre.toUpperCase();
+
+        System.out.println("## CLASES DISPONIBLES ##\n" +
+                "# GUERRERO\n" +
+                "# MAGO\n" +
+                "# PALADIN\n");
+        System.out.print("Introduzca la clase que desee jugar: ");
+        String clase = in.nextLine();
+
+        clase.toUpperCase();
+
+        while(!clase.equals("GUERRERO") || !clase.equals("MAGO") || !clase.equals("PALADIN")){
+
+            System.out.println("Error, introduzca la clase GUERRERO, MAGO o PALADIN");
+            clase = in.nextLine();
+        }
+
+        player.setNombre(nombre);
+        player.setTipoPersonaje(clase);
+
+    }
+
+    public void apareceEnemigo(){
+
+        System.out.println("\t ## ¡Ha aparecido un " + enemy.getNombreEnemigo() + " ! ## \n" +
+                "\t ##ENEMIGO: " + enemy.getNombreEnemigo() +
+                " || HP:  " + enemy.getVidaEnemigos() +
+                " || NIVEL: " + enemy.getNivel());
+
+    }
+
 }

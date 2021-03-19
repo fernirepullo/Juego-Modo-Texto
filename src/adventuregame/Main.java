@@ -1,24 +1,38 @@
 package adventuregame;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        // PRUEBA DE CLASES
-
-        //Operaciones op = new Operaciones();
-
-        //for (int i = 0; i < 20; i++) {
-
-          //  int testVida = op.getVidaAleatoria(20 , 50);
-            //System.out.println(testVida);
-        //}
-
-
-
+        Jugador player;
+        Enemigos enemies = new Enemigos();
         Texto t = new Texto();
+        Objetos items = new Objetos();
+        Magias magic = new Magias();
+        Operaciones op = new Operaciones();
 
-        t.instrucciones();
+        Random random = new Random();
+        boolean running = true;
+        String[] enemigosDisponibles;
+        String nombreEnemigo;
+        int vidaEnemigo;
+
+
+        GAME:
+        while (running){
+
+            t.instrucciones();
+            t.empezar();
+
+
+            enemigosDisponibles = enemies.getEnemigos(1);
+            nombreEnemigo = enemigosDisponibles[random.nextInt(enemigosDisponibles.length)];
+            vidaEnemigo = random.nextInt(enemies.getVidaEnemigos());
+
+
+        }
 
     }
 }

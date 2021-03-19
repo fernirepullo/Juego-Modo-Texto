@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Enemigos {
 
+    Operaciones op = new Operaciones();
     //VARIABLES DE LOS ENEMIGOS
     private String nombreEnemigo;
     private String[] enemigos;
@@ -15,7 +16,8 @@ public class Enemigos {
     //ESTADÍSTICAS DE LOS ENEMIGOS
     private int vidaMax;
     private int vidaMin;
-    private int vida;
+    private int vidaEnemigos;
+    private int vidaJefes;
     private int manaMax;
     private int damageMax;
 
@@ -23,6 +25,7 @@ public class Enemigos {
     private int nivel;
     private int experiencia;
     private int expMax;
+    private int dropChancePocion = 25;
 
     // SETTERS Y GETTERS
     public String getNombreEnemigo() {
@@ -44,8 +47,57 @@ public class Enemigos {
         return manaMax;
     }
 
-    public int getVida() {
-        return vida;
+    public int getVidaEnemigos() {
+
+        if (nivel > 0 && nivel < 4){
+
+            vidaMin = 10;
+            vidaMax = 30;
+            vidaEnemigos = op.getVidaAleatoria(vidaMin, vidaMax);
+        }
+
+        else if (nivel >= 4 && nivel < 7){
+
+            vidaMin = 40;
+            vidaMax = 80;
+            vidaEnemigos = op.getVidaAleatoria(vidaMin, vidaMax);
+        }
+
+        else {
+
+            vidaMin = 90;
+            vidaMax = 200;
+            vidaEnemigos = op.getVidaAleatoria(vidaMin, vidaMax);
+        }
+
+        return vidaEnemigos;
+    }
+
+    public int getVidaJefes() {
+
+        if (nivel > 0 && nivel < 4){
+
+            vidaMin = 50;
+            vidaMax = 100;
+            vidaJefes = op.getVidaAleatoria(vidaMin, vidaMax);
+        }
+
+        else if (nivel >= 4 && nivel < 7){
+
+            vidaMin = 150;
+            vidaMax = 210;
+            vidaJefes = op.getVidaAleatoria(vidaMin, vidaMax);
+        }
+
+        else {
+
+            vidaMin = 260;
+            vidaMax = 320;
+            vidaJefes = op.getVidaAleatoria(vidaMin, vidaMax);
+        }
+
+
+        return vidaJefes;
     }
 
     public int getExpMax() {
@@ -72,8 +124,8 @@ public class Enemigos {
         this.nivel = nivel;
     }
 
-    public void setVida(int vida) {
-        this.vida = vida;
+    public void setVidaEnemigos(int vida) {
+        this.vidaEnemigos = vida;
     }
 
     public void setManaMax(int manaMax) {

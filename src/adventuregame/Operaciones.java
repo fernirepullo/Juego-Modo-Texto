@@ -18,11 +18,6 @@ public class Operaciones {
     // CONSTRUCTOR POR DEFECTO, INICIANDO LAS VARIABLES.
     public Operaciones(){
 
-        enemies = new Enemigos();
-        player = new Jugador();
-        item = new Objetos();
-        magic = new Magias();
-
     }
 
     // MÉTODO PARA DEVOLVER UNA VIDA ALEATORIA ENTRE DOS RANGOS
