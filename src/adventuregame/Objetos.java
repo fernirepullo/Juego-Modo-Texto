@@ -15,10 +15,11 @@ public class Objetos {
 
         itemsGue = new String[]{"Casco", "Peto", "Guantes", "Hombreras", "Pantalón",
                                 "Botas", "Espada", "Hacha", "Escudo"};
+
         itemsMag = new String[]{"Sombrero", "Capa", "Guantes", "Anillo", "Pantalón",
                 "Botas", "Báculo", "Libro de Hechizos", "Orbe"};
 
-        itemsPal = new String[]{"Casco", "Peto", "Guantes", "Anillo", "Pantalón",
+        itemsPal = new String[]{"Casco", "Peto", "Guantes", "Anillo", "Pantalón", "Hombreras",
                 "Martillo", "Espada", "Escudo"};
 
         rareza = new String[]{"Común", "Infrecuente", "Raro", "Épico", "Legendario"};

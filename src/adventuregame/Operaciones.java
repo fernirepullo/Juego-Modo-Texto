@@ -37,14 +37,19 @@ public class Operaciones {
         return vidaEnemigo;
     }
 
-    // MÉTODO PARA DEVOLVER LA LISTA DE OBJETOS DISPONIBLES SEGÚN LA CLASE
+    // MÉTODO PARA DEVOLVER UN OBJETO ALEATORIO DE LA CLASE ELEGIDA
 
-    public String getObjeto(String tipoPersonaje){
-
-        item = new Objetos();
-        String[] itemsDisponibles;
+    public String getObjetoAleatorio(){
 
         Scanner in = new Scanner(System.in);
+        Random random = new Random();
+        item = new Objetos();
+
+        String[] itemsDisponibles = new String[]{};
+        int indice;
+        String tipoPersonaje;
+
+        tipoPersonaje = player.getTipoPersonaje();
         tipoPersonaje = tipoPersonaje.toUpperCase();
 
         while(!tipoPersonaje.equals("GUERRERO") || !tipoPersonaje.equals("MAGO") || !tipoPersonaje.equals("PALADIN")){
@@ -58,30 +63,35 @@ public class Operaciones {
         if (tipoPersonaje.equals("GUERRERO")){
 
             itemsDisponibles = item.getItemsGue();
-
         }
 
         else if (tipoPersonaje.equals("MAGO")){
 
             itemsDisponibles = item.getItemsMag();
-
         }
 
         else if (tipoPersonaje.equals("PALADIN")){
 
             itemsDisponibles = item.getItemsPal();
-
         }
 
-        return "";
+        indice = random.nextInt(10);
+
+        return itemsDisponibles[indice];
     }
 
-    // MÉTODO PARA DEVOLVER LAS RAREZAS.
+    // MÉTODO PARA DEVOLVER UNA RAREZA ALEATORIA.
 
     public String getRareza(){
 
+        Random random = new Random();
 
-        return "";
+        item = new Objetos();
+        int indice;
+
+        indice = random.nextInt(6);
+
+        return item.getRareza()[indice];
     }
 
 }

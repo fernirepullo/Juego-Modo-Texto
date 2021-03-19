@@ -164,7 +164,7 @@ public class Enemigos {
     }
 
 
-    //MÉTODO TOSTRING()
+    // MÉTODO TOSTRING()
     @Override
     public String toString() {
         return "Enemigos{" +
